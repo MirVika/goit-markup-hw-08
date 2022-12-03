@@ -1,0 +1,146 @@
+.button :active {
+    color: var(--secondary-bcd-button-color);
+    border: 1px transparent;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 6px 22px;
+    color: var(--secondary-acent-text-color);
+    background-color: var(--acent-text-color);
+    border: none transparent;
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+
+    text-align: center;
+}
+
+.primary.button {
+    color: var(--secondary-acent-text-color);
+    background-color: var(--acent-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    border: inherit;
+    border: none transparent;
+    padding: 10px 32px;
+    margin-top: 40px;
+    transition: color var(--trns-fast), background-color var(--trns-fast), box-shadow var(--trns-fast);
+}
+
+.secondary.button:focus,
+.secondary.button:hover {
+    color: var(--secondary-acent-text-color);
+    background-color: var(--acent-text-color);
+}
+
+.secondary.button {
+    color: var(--title-text-color);
+    background-color: var(--secondary-background-color);
+    border-color: var(--secondary-background-color);
+    border: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    letter-spacing: 0.03em;
+    border: none;
+    transition: color var(--trns-fast), background-color var(--trns-fast);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+// hero button
+
+.primary.button {
+    color: var(--secondary-acent-text-color);
+    background-color: var(--acent-text-color);
+}
+
+/* examples */
+.prime.button {
+    color: var(--secondary-acent-text-color);
+    background-color: var(--acent-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    letter-spacing: 0.03em;
+    border: inherit;
+    border: none transparent;
+    padding: 6px 22px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: color var(--trns-fast), background-color var(--trns-fast);
+}
+
+.project-list .button {
+    cursor: pointer;
+}
+
+.footer-btn {
+    color: var(--secondary-acent-text-color);
+    background-color: var(--acent-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    border: inherit;
+    border: none transparent;
+    padding: 10px 32px;
+
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin-left: 12px;
+    gap: 10px;
+    transition: background-color var(--trns-fast);
+}
+.form-btn {
+    margin-top: 30px;
+    color: var(--secondary-acent-text-color);
+    background-color: var(--acent-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    border: inherit;
+    border: none transparent;
+    padding: 10px 52px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: block;
+    transition: color var(--trns-fast), background-color var(--trns-fast), box-shadow var(--trns-fast);
+}
+
+// modal close button
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    cursor: pointer;
+    transition: var(--trns-fast);
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: var(--acent-text-color);
+}
+
+.close-btn-icon {
+    fill: currentColor;
+}

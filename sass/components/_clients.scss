@@ -1,0 +1,32 @@
+.client {
+    @include section (94px, 94px);
+}
+
+.client-list {
+    display: flex;
+    gap: 30px;
+}
+.client-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    color: #afb1b8;
+    transition: color var(--trns-fast);
+
+    &:hover,
+    &:focus {
+        color: #2196f3;
+    }
+}
+
+
+.client-list__icon {
+    fill: currentColor;
+}
+
+
+

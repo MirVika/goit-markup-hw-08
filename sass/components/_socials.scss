@@ -1,0 +1,30 @@
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #afb1b8;
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    border-radius: 50%;
+
+    transition: fill var(--trns-fast), background-color var(--trns-fast);
+
+    &:hover,
+    &:focus {
+        background-color: var(--acent-text-color);
+        fill: var(--secondary-acent-text-color);
+    }
+}
+
+// footer
+
+.footer-social {
+    margin-left: 70px;
+}

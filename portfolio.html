@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header style="border: 1px solid #ececec">
+      <div class="container main-nav">
+        <a href="./index.html" class="logo">Web<span>Studio</span></a>
+
+        <nav>
+          <ul class="list site-nav">
+            <li class="item">
+              <a href="./index.html" class="link"> Студія</a>
+            </li>
+            <li class="item">
+              <a class="site-nav-link current" href="./portfolio.html" class="link current-cover"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="item"><a href="./index.html" class="link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="list contacts contacts-list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com">
+              <svg class="contact-icon" width="16" height="12">
+                <use href="./img/icons.svg#icon-envelope-hover"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111">
+              <svg class="contact-icon" width="10" height="16">
+                <use href="./img/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="portfolio section">
+        <div class="container">
+          <h1 class="visual-hidden">Наші проекти</h1>
+          <ul class="project-list">
+            <li class="project-title">
+              <button type="button" class="button prime">Усі</button>
+            </li>
+            <li class="project-title">
+              <button type="button" class="button secondary">Веб-сайти</button>
+            </li>
+            <li class="project-title">
+              <button type="button" class="button secondary">Додатки</button>
+            </li>
+            <li class="project-title">
+              <button type="button" class="button secondary">Дизайн</button>
+            </li>
+            <li class="project-title">
+              <button type="button" class="button secondary">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="examples list">
+            <li class="element">
+              <a href="#" class="element-link">
+                <div class="element-thumb">
+                  <img src="./img/notebook.jpg" alt="opened notebook" width="370" />
+                  <div class="overlay">
+                    <p class="overlay-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="ex-text">
+                  <h2 class="title">Технокряк</h2>
+                  <p class="text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="element">
+              <a href="#" class="element-link">
+                <img src="./img/basketballplayers.jpg" alt="two basketballplayers" width="370" />
+                <div class="ex-text">
+                  <h2 class="title">Постер New Orlean vs Golden Star</h2>
+                  <p class="text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="element">
+              <a href="#" class="element-link">
+                <img src="./img/seefood.jpg" alt="logo seafood" width="370" />
+                <div class="ex-text">
+                  <h2 class="title">Ресторан Seafood</h2>
+                  <p class="text">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="element">
+              <a href="#" class="element-link">
+                <img src="./img/earphones.jpg" alt="black earphones" width="370" />
+                <div class="ex-text">
+                  <h2 class="title">Проєкт Prime</h2>
+                  <p class="text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="element">
+              <a href="#" class="element-link">
+                <img src="./img/box.jpg" alt="two paper boxes" width="370" />
+                <div class="ex-text">
+                  <h2 class="title">Проєкт Boxes</h2>
+                  <p class="text">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="element">
+              <a href="#" class="element-link">
+                <img src="./img/macbook.jpg" alt="macbook" width="370" />
+                <div class="ex-text">
+                  <h2 class="title">Inspiration has no Borders</h2>
+                  <p class="text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="element">
+              <a href="#" class="element-link">
+                <img src="./img/magazine.jpg" alt="opened magazine" width="370" />
+                <div class="ex-text">
+                  <h2 class="title">Видання Limited Edition</h2>
+                  <p class="text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="element">
+              <a href="#" class="element-link">
+                <img src="./img/lable.jpg" alt="white lable" width="370" />
+                <div class="ex-text">
+                  <h2 class="title">Проєкт LAB</h2>
+                  <p class="text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="element">
+              <a href="#" class="element-link">
+                <img
+                  src="./img/laptopwithhands.jpg"
+                  alt="opened laptop with typing hands"
+                  width="370"
+                />
+                <div class="ex-text">
+                  <h2 class="title">Growing Business</h2>
+                  <p class="text">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="background-footer">
+      <div class="container footer-section">
+        <div>
+          <a href="./index.html" class="logo">Web<span class="footer-logo">Studio</span></a>
+          <address>
+            <ul class="list contact">
+              <li class="address-item address">
+                <a
+                  href="https://goo.gl/maps/jU2AcvMiYbPrWgQS8"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="address-item">
+                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="address-item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social">
+          <p class="invite">приєднуйтесь</p>
+          <ul class="social-list list">
+            <li class="social-item">
+              <a
+                class="link-footer link"
+                href="https://instagram.com"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="icon-instagram"
+              >
+                <svg class="social-icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                class="link-footer link"
+                href="https://twitter.com"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="icon-twitter"
+              >
+                <svg class="social-icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                class="link-footer link"
+                href="https://facebook.com"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="icon-facebook"
+              >
+                <svg class="social-icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                class="link-footer link"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="icon-linkedin"
+              >
+                <svg class="social-icon" width="20" height="20">
+                  <use href="./img/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe-form">
+          <p class="subscribe">Підпишіться на розсилку</p>
+          <form class="follow">
+            <label>
+              <input class="footer-input" type="email" name="email" placeholder="E-mail">
+            </label>
+            
+            <button class="footer-btn" type="submit">
+Підписатися
+<svg class="send-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-icon-send"></use>
+                </svg></button>
+          </form>
+        </div>
+      
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+.contact a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    transition: fill var(--trns-fast);
+}
+
+.address-item .address {
+    color: var(--secondary-acent-text-color);
+    transition: color var(--trns-fast);
+}
+
+.contact.list a:hover,
+.contact.list a:focus {
+    color: var(--acent-text-color);
+}
+
+.address a {
+    color: var(--secondary-acent-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+}
+
+footer a {
+    font-style: normal;
+}
+
+
+.background-footer {
+    background-color: var(--bcd-black);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.address-item {
+    margin-top: 20px;
+
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
+
+.address-item a {
+    transition: fill var(--trns-fast);
+}
+
+.invite {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.link-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--secondary-acent-text-color);
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: fill var(--trns-fast), background-color var(--trns-fast);
+
+    &:hover,
+    &:focus {
+        background-color: var(--acent-text-color);
+        fill: var(--secondary-acent-text-color);
+    }
+}
+
+.subscribe {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.subscribe-form {
+    margin-left: auto;
+
+}
+
+.follow {
+    display: flex;
+    align-items: center;
+}
+
+.footer-input {
+    padding: 15px;
+    font-family: inherit;
+    background: transparent;
+    width: 358px;
+    height: 50px;
+    left: 815px;
+    top: 2784px;
+    color: var(--secondary-acent-text-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+
+.send-icon {
+    justify-content: center;
+}

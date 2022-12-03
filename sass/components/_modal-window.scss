@@ -1,0 +1,147 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur 2px;
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+    transition: opacity 150ms linear, visibility 150ms linear;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 528px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    z-index: var(--index-backdrop);
+    padding: 40px;
+
+}
+
+
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 12px;
+}
+
+.modal-field {
+    position: relative;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    display: inline-block;
+    fill: currentColor;
+}
+
+.form-icon:hover,
+.form-icon:focus {
+    fill: var(--acent-text-color);
+}
+
+.form-label {
+
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    /* identical to box height */
+    letter-spacing: 0.01em;
+    color: #757575;
+    transition: var(--trns-fast);
+
+&:focus,
+&:hover {
+        border: var(--acent-text-color);
+    }
+}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    cursor: pointer;
+    transition: border-color var(--trns-fast);
+    padding-left: 40px;
+
+    &:focus,
+    &:hover {
+            border-color: var(--acent-text-color);
+            transition: var(--trns-fast);
+        }
+}
+
+.form-icon {
+    fill: currentColor;
+
+    &:focus,
+    &:hover {
+            fill: var(--acent-text-color);
+        }
+}
+
+.form-label {
+
+    margin-bottom: 4px;
+}
+
+.form-field {
+    margin-bottom: 20px;
+    fill: currentColor;
+
+    &:hover,
+    &:focus {
+            fill: var(--acent-text-color);
+        }
+}
+
+.form-message {
+    width: 100%;
+    height: 120px;
+    resize: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
+    cursor: pointer;
+    padding: 12px 16px;
+
+    &:focus {
+        border-color: var(--acent-text-color);
+        transition: var(--trns-fast);
+    }
+}
+
+
