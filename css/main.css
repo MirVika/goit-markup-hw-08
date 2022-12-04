@@ -771,7 +771,7 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 28px;
+  gap: 25px;
 }
 @media screen and (min-width: 768px) {
   .client-list {
@@ -869,6 +869,18 @@ footer a {
   background-color: var(--bcd-black);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .background-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .background-footer {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .address-item {
