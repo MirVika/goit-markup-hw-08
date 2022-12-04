@@ -1,16 +1,58 @@
 .client {
-    @include section (94px, 94px);
-}
+    
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+
+
+        @media screen and (min-width: 768px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+
+    }
 
 .client-list {
+
     display: flex;
-    gap: 30px;
+        flex-wrap: wrap;
+       gap: 28px;
+
+    @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+   
+}
+
+
+
+
+.client-list__items {
+display: flex;
+
+    @media screen and (min-width: 768px) {
+        max-width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 170px;
+    }
+
+
 }
 .client-list__link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid currentColor;
     border-radius: 4px;
@@ -21,6 +63,14 @@
     &:focus {
         color: #2196f3;
     }
+
+         @media screen and (min-width: 768px) {
+             max-width: 226px;
+         }
+    
+         @media screen and (min-width: 1200px) {
+             max-width: 170px;
+         }
 }
 
 
