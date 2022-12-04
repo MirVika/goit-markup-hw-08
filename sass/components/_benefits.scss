@@ -9,15 +9,12 @@
     @media screen and (min-width: 768px ) {
             padding-top: 60px;
             padding-bottom: 60px;
-            padding-left: 15px;
-            padding-right: 15px;
+            
         }
     
         @media screen and (min-width: 1200px ) {
             padding-top: 94px;
             padding-bottom: 94px;
-            padding-left: 215px;
-            padding-right: 215px;
         }
 
 }
@@ -65,6 +62,10 @@
     @media screen and (min-width: 768px) {
         max-width: 354px;
         }
+
+    @media screen and (min-width: 1200px) {
+                     max-width: 270px;
+                 }
 
     
 }
