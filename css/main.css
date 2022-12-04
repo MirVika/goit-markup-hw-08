@@ -29,18 +29,18 @@
   overflow: hidden;
 }
 
-.our-team, .what-we-do {
+.what-we-do {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
-  .our-team, .what-we-do {
+  .what-we-do {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .our-team, .what-we-do {
+  .what-we-do {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -401,12 +401,15 @@ span {
 }
 
 .main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .main-nav {
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .site-nav {
@@ -655,14 +658,38 @@ span {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.team {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.our-team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .our-team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.team-item + .team-item {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .team-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .team-item {
@@ -672,6 +699,21 @@ span {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (max-width: 767.98px) {
+  .team-item {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-item {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-item {
+    max-width: 270px;
+  }
 }
 
 .team-title {
@@ -1259,4 +1301,93 @@ footer a {
 
 .checkbox-form:checked + .form-icon.checked {
   opacity: 1;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #3f51b5;
+  z-index: 999;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.menu-toggle {
+  color: #fff;
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.menu-toggle-icon {
+  fill: currentColor;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin-bottom: auto;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map *//*# sourceMappingURL=main.css.map */
