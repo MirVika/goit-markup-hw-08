@@ -128,15 +128,6 @@ button {
   margin-bottom: 50px;
 }
 
-.footer-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
 .list {
   list-style: none;
   padding: 0;
@@ -247,6 +238,7 @@ a {
   border: inherit;
   border: none transparent;
   padding: 10px 32px;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,6 +390,16 @@ span {
 .footer-logo {
   color: var(--secondary-acent-text-color);
   margin-bottom: 30px;
+}
+
+.logo-foot {
+  color: #2196f3;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1923076923;
 }
 
 .main-nav {
@@ -772,6 +774,9 @@ p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .client-list {
@@ -885,6 +890,7 @@ footer a {
 
 .address-item {
   margin-top: 20px;
+  margin-bottom: 60px;
 }
 .address-item:not(:last-child) {
   margin-bottom: 9px;
@@ -902,6 +908,7 @@ footer a {
   line-height: 1.1428571429;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .link-footer {
@@ -938,12 +945,13 @@ footer a {
 
 .subscribe-form {
   margin-left: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 60px;
 }
 
 .follow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -953,10 +961,9 @@ footer a {
   padding: 15px;
   font-family: inherit;
   background: transparent;
-  width: 358px;
+  width: 100%;
   height: 50px;
-  left: 815px;
-  top: 2784px;
+  max-width: 450px;
   color: var(--secondary-acent-text-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -970,6 +977,17 @@ footer a {
           justify-content: center;
 }
 
+.footer-section {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  text-align: center;
+}
+
+.footer-social {
+  text-align: center;
+}
+
 .social-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -978,6 +996,7 @@ footer a {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
+  justify-content: center;
 }
 
 .social-link {
@@ -1001,10 +1020,6 @@ footer a {
 .social-link:hover, .social-link:focus {
   background-color: var(--acent-text-color);
   fill: var(--secondary-acent-text-color);
-}
-
-.footer-social {
-  margin-left: 70px;
 }
 
 .examples .title {
