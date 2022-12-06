@@ -105,10 +105,26 @@ footer a {
     justify-content: center;
     margin-top: 60px;
 
+    @media screen and (min-width: 768px) {
+           margin-top: 0; 
+           margin-bottom: 20px;
+           margin: 0;
+           margin-left: auto;
+    
+        }
+
+  
+
 }
 
 .follow {
     align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        
+    }
 }
 
 .footer-input {
@@ -122,6 +138,10 @@ footer a {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
 }
 
 
@@ -132,9 +152,32 @@ footer a {
 .footer-section {
     align-items: baseline;
     text-align: center;
-    
+
+    @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: baseline;
+            text-align: unset;
+            
+            
+        }
+
+  
 }
 
 .footer-social {
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+        text-align: unset;
+    }
+
 }
+
+.tablet-footer {
+    @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-around;
+    
+        }
+} 
