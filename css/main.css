@@ -334,8 +334,18 @@ a {
           justify-content: center;
 }
 
-.logo {
-  margin-right: 93px;
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-right: 88px;
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+    margin-left: 15px;
+    margin-top: 16px;
+  }
 }
 
 .contacts-list a {
@@ -348,10 +358,31 @@ a {
 }
 
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .phone-header {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .phone-header {
+    margin-top: 0;
+  }
 }
 
 .contacts .item:nth-child(-n+1) {
@@ -395,6 +426,12 @@ a {
           align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .tablet-nav {
+    display: block;
+  }
+}
+
 .logo {
   color: #2196f3;
   text-decoration: none;
@@ -429,7 +466,9 @@ span {
 }
 @media screen and (min-width: 768px) {
   .main-nav {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -440,6 +479,11 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (min-width: 768px) {
+  .site-nav {
+    margin-right: 96px;
+  }
 }
 .site-nav .item + .item {
   margin-left: 50px;
