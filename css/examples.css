@@ -23,9 +23,27 @@
 }
 
 .element {
-  width: 370px;
-  margin-right: 30px;
+  width: 450px;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 767.98px) {
+  .element {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .element {
+    max-width: 354px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .element {
+    max-width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .element-link:hover,
