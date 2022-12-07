@@ -1468,7 +1468,6 @@ footer a {
   padding: 0;
   background-color: #212121;
   border: none;
-  border-radius: 50%;
   outline: none;
   cursor: pointer;
 }
@@ -1497,7 +1496,7 @@ footer a {
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: #3f51b5;
+  background-color: white;
   z-index: 999;
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
@@ -1523,7 +1522,7 @@ footer a {
 }
 
 .menu-toggle-icon {
-  fill: currentColor;
+  fill: #212121;
 }
 
 .mobile-menu {
@@ -1535,7 +1534,7 @@ footer a {
 .mobile-menu .link {
   display: block;
   padding: 10px;
-  color: #fff;
+  color: #212121;
   text-decoration: none;
 }
 
