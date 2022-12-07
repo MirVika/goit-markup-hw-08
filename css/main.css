@@ -386,6 +386,15 @@ a {
   border-bottom: 1px solid #ececec;
 }
 
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .logo {
   color: #2196f3;
   text-decoration: none;
@@ -1457,7 +1466,7 @@ footer a {
   justify-content: center;
   margin-left: auto;
   padding: 0;
-  background-color: transparent;
+  background-color: #212121;
   border: none;
   border-radius: 50%;
   outline: none;
@@ -1504,7 +1513,7 @@ footer a {
 }
 
 .menu-toggle {
-  color: #fff;
+  color: tomato;
 }
 
 .menu-container .menu-toggle {
