@@ -14,8 +14,7 @@
 }
 .examples {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+ 
 }
 .element {
   width: 450px;
@@ -51,9 +50,9 @@
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
-.element:nth-child(3n) {
+// .element:nth-child(3n) {
   margin-right: 0pt;
-}
+// }
 .element:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 }
