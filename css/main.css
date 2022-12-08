@@ -334,7 +334,7 @@ a {
           justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .logo {
     margin-right: 88px;
     margin-left: 15px;
@@ -385,8 +385,10 @@ a {
   }
 }
 
-.contacts .item:nth-child(-n+1) {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .contacts .item:nth-child(-n+1) {
+    margin-right: 50px;
+  }
 }
 
 .contacts a {
@@ -426,9 +428,24 @@ a {
           align-items: center;
 }
 
+.tablet-nav {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .tablet-nav {
     display: block;
+    margin-left: auto;
+  }
+}
+
+.navigation {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -462,7 +479,12 @@ span {
 }
 
 .main-nav {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (min-width: 768px) {
   .main-nav {
@@ -479,11 +501,6 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-@media screen and (min-width: 768px) {
-  .site-nav {
-    margin-right: 96px;
-  }
 }
 .site-nav .item + .item {
   margin-left: 50px;
@@ -551,7 +568,8 @@ span {
 
 .box {
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
+  padding: 118px 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -614,7 +632,7 @@ span {
 }
 @media screen and (min-width: 769px) {
   .hero-title {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.3636363636;
   }
@@ -623,7 +641,6 @@ span {
 .hero {
   background-color: var(--bcd-black);
   text-align: center;
-  padding: 200px 0;
 }
 
 .benefits {
@@ -1351,6 +1368,21 @@ footer a {
   background-color: #ffffff;
   z-index: var(--index-backdrop);
   padding: 40px;
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 95%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 609px;
+    overflow: scroll;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-title {

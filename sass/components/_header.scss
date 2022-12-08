@@ -10,7 +10,7 @@
 }
 
 .logo {
-    @media screen and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
       margin-right: 88px;
       margin-left: 15px; 
     }
@@ -53,7 +53,11 @@
 }
 
 .contacts .item:nth-child(-n + 1) {
+
+    @media screen and (min-width: 1200px) {
     margin-right: 50px;
+    }
+    
 }
 
 .contacts a {
@@ -88,8 +92,18 @@
 }
 
 .tablet-nav {
+    display: none;
 @media screen and (min-width: 768px) {
         display: block;
+        margin-left: auto;
 
+    }
+}
+
+.navigation {
+    display: none;
+
+    @media screen and (min-width: 768px){
+     display: flex;   
     }
 }
