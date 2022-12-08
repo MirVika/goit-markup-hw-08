@@ -18,23 +18,28 @@
 
   <body>
      <header style="border: 1px solid #ececec">
-      <div class="header container">
-      <a href="./index.html" class="logo">Web<span>Studio</span></a>
+      
       <div class="container main-nav">
-  
-        <nav>
+  <a href="./index.html" class="logo">Web<span>Studio</span></a>
+        <nav class="navigation">
           <ul class="list site-nav">
             <li class="item">
-              <a class="site-nav-link" href="./index.html">Студія</a>
-            </li>
-            <a class="site-nav-link current" href="./portfolio.html" class="link current-cover"
-                >Портфоліо</a
+              <a class="site-nav-link current" href="./index.html" class="link">
+                Студія</a
               >
-
+            </li>
+            <li class="item"><a href="./portfolio.html" class="link  current-cover">Портфоліо</a></li>
             <li class="item"><a href="./index.html" class="link">Контакти</a></li>
           </ul>
         </nav>
-        <div class="tablet-nav">
+        
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-twitter-1"></use>
+          </svg>
+         
+        </button>
+          <div class="tablet-nav">
         <ul class="list contacts contacts-list">
           <li class="item">
             <a href="mailto:info@devstudio.com">
@@ -55,12 +60,8 @@
         </ul>
         </div>
       </div>
-      </div>
-      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg class="menu-toggle-icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-menu_24px"></use>
-          </svg>
-        </button>
+      
+     
     </header>
     <main>
       <section class="portfolio section">
